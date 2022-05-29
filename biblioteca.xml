@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<biblioteca>
+    <libro id="L0001" npag="390">
+        <claseL tipo_claseL="novela">Novela</claseL>
+        <tituloL>Lorem ipsum</tituloL>
+        <capituloL npag="100">
+            <ctitulo>Lorem ipsum</ctitulo>
+            <ccontenido informacionL="...">Lorem ipsum</ccontenido>
+        </capituloL>
+        <indiceL>Lorem ipsum</indiceL>
+        <sinopsisL>Lorem ipsum</sinopsisL>
+    </libro>
+    <revista id="R" npag="x">
+        <claseR tipo_claseR="informatica">Informática</claseR>
+        <tituloR>Lorem ipsum</tituloR>
+        <nrev>nº2</nrev>
+        <indiceR>Lorem ipsum</indiceR>
+        <seccionR npag="300">
+            <contenidoR informacionR="...">Lorem ipsum</contenidoR>
+        </seccionR>
+    </revista>
+    <periodico id="P0001">
+        <claseP tipo_claseP="nacional" fpub="hoy">Nacional</claseP>
+        <seccionP tipsec="economica">
+            <articuloP autor="nosotros">Lorem ipsum</articuloP>
+        </seccionP>
+        <indiceP>Lorem ipsum</indiceP>
+        <contenidoP informacionP="...">Lorem ipsum</contenidoP>
+    </periodico>
+</biblioteca>

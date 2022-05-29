@@ -1,0 +1,47 @@
+<!DOCTYPE biblioteca [
+<!-- Definición de elementos -->
+<!ELEMENT biblioteca (libro,revista,periodico+)>
+<!ELEMENT libro (claseL,tituloL,capituloL,indiceL,sinopsisL)>
+<!ELEMENT claseL (#PCDATA)>
+<!ELEMENT tituloL (#PCDATA)>
+<!ELEMENT capituloL (ctitulo,ccontenido)>
+<!ELEMENT ctitulo (#PCDATA)>
+<!ELEMENT ccontenido (#PCDATA)>
+<!ELEMENT indiceL (#PCDATA)>
+<!ELEMENT sinopsisL (#PCDATA)**>
+<!ELEMENT revista (claseR,tituloR,nrev,indiceR,seccionR)>
+<!ELEMENT claseR (#PCDATA)>
+<!ELEMENT tituloR (#PCDATA)>
+<!ELEMENT nrev (#PCDATA)>
+<!ELEMENT indiceR (#PCDATA)>
+<!ELEMENT seccionR (contenidoR)>
+<!ELEMENT contenidoR (#PCDATA)>
+<!ELEMENT periodico (claseP,seccionP,indiceP,contenidoP)>
+<!ELEMENT claseP (#PCDATA)>
+<!ELEMENT seccionP (articuloP)>
+<!ELEMENT articuloP (#PCDATA)>
+<!ELEMENT indiceP (#PCDATA)>
+<!ELEMENT contenidoP (#PCDATA)>
+<!-- Definición de atributos -->    
+<!ATTLIST libro id ID #REQUIRED>
+<!ATTLIST libro npag CDATA #REQUIRED>
+<!ATTLIST claseL tipo_claseL (novela | infantil | didactico) #REQUIRED>
+<!ATTLIST capituloL npag CDATA #REQUIRED>
+<!ATTLIST ccontenido informacionL CDATA #REQUIRED>
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista npag CDATA #REQUIRED>
+<!ATTLIST claseR tipo_claseR (informatica | corazon | coches | investigacion | otras) #REQUIRED>
+<!ATTLIST seccionR npag CDATA #REQUIRED>
+<!ATTLIST contenidoR informacionR CDATA #REQUIRED>
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST claseP tipo_claseP (nacional | internacional) #REQUIRED>
+<!ATTLIST claseP fpub CDATA #REQUIRED>
+<!ATTLIST seccionP tipsec (economica | opinion | deportes | nacional | internacional) #REQUIRED>
+<!ATTLIST articuloP autor CDATA #REQUIRED>
+<!ATTLIST contenidoP informacionP CDATA #REQUIRED>
+    
+]>
+
+
+
+
